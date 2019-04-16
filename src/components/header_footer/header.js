@@ -16,7 +16,10 @@ class header extends Component {
     componentDidMount(){
         window.addEventListener('scroll', this.handleScroll);
     }
-//  Remember to remove the event listener when this kind of component unmounts to avoid poor performance
+//  Remember to remove the event listener when this 
+//  kind of component unmounts to avoid poor performance
+//  in non SPA/landing page web apps
+
     handleScroll = () => {
         if(window.scrollY > 0){
             this.setState({
